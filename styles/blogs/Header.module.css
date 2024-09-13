@@ -1,0 +1,163 @@
+.header {
+    width: 100%;
+    border-right: 1px solid var(--grey-color);
+    border-left: 1px solid var(--grey-color);
+    padding: 0 2rem;
+    margin-top: .8rem;
+}
+
+.headerMain {
+    display: flex;
+    margin-bottom: 2.5rem;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.headerMainContent {
+    width: 60%;
+}
+
+.headerTitle {
+    font-size: 1.4rem;
+    margin-bottom: .4rem;
+}
+
+.headerParagraph {
+    font-size: .9rem;
+    color: grey;
+}
+
+.headerParagraph > b {
+    color: var(--text-color);
+}
+
+.socials {
+    display: flex;
+    gap: 1rem;
+}
+
+.social {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.instagram {
+    color: rgb(228, 0, 228);
+    font-size: 1.1rem;
+}
+
+.linkedin {
+    color: rgb(0, 96, 240);
+    font-size: 1.1rem;
+}
+
+/* Search */
+.headerSearch {
+    display: flex;
+    width: 100%;
+    gap: 1.5rem;
+}
+
+.headerSearchContent {
+    background-color: var(--bg-grey);
+    padding: .7rem;
+    border-radius: var(--radius);
+    width: 35%;
+
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.headerSearchIcon {
+    font-size: 1.3rem;
+}
+
+.headerSearchInput {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: .9rem;
+    width: 90%;
+    color: var(--text-color);
+}
+
+.headerCatergories {
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+}
+
+.headerCatergory {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .5s all linear;
+}
+
+.headerCatergoryTitle {
+    font-size: .9rem;
+}
+
+.headerCatergoryActive {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    padding: .7rem;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    color: #ffffff;
+    transition: .5s all linear;
+}
+
+@media screen and (max-width: 480px) {
+    .headerSearch {
+        flex-direction: column;
+    }
+    .headerSearchContent {
+        width: 100%;
+    }
+    .headerMain {
+        flex-direction: column;
+        justify-content: none;
+        margin-bottom: 1rem;
+    }
+    .socials {
+        align-items: flex-end;
+        justify-content: center;
+        width: 100%;
+        margin-top: .5rem;
+    }
+    .headerMainContent {
+        width: 100%;
+    }
+    .headerTitle {
+        font-size: 1.1rem;
+    }
+    .headerParagraph {
+        width: 100%;
+        margin-bottom: .3rem;
+    }
+    .headerCatergories {
+        width: 100%;
+        gap: .5rem;
+    }
+    .headerParagraph {
+        font-size: .8rem;
+    }
+    .header {
+        padding: 0 .8rem;
+    }
+    .headerCatergoryTitle {
+        font-size: .8rem;
+    }
+    .social {
+        font-size: .7rem;
+    }
+    .headerSearchInput {
+        font-size: .8rem;
+    }
+}

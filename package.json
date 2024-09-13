@@ -1,0 +1,37 @@
+{
+  "name": "contawo-version",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@contentful/rich-text-react-renderer": "^15.19.0",
+    "@monaco-editor/react": "^4.6.0",
+    "contentful": "^10.6.7",
+    "copy-to-clipboard": "^3.3.3",
+    "firebase": "^10.6.0",
+    "framer-motion": "^10.16.4",
+    "next": "14.0.2",
+    "next-seo": "^6.4.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^4.11.0",
+    "react-paginate": "^8.2.0",
+    "react-player": "^2.13.0",
+    "react-slick": "^0.29.0",
+    "react-syntax-highlighter": "^15.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/react-syntax-highlighter": "^15.5.10",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.2",
+    "typescript": "^5"
+  }
+}

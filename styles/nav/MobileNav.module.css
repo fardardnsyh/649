@@ -1,0 +1,117 @@
+.mbNav {
+    background-color: var(--bg-color);
+    height: 100vh;
+    width: 60%;
+    position: sticky;
+    top: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    padding-bottom: 8rem;
+    transition: .5s all linear;
+    padding-left: .5rem;
+}
+
+.mbNavLogo {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.mbNavLogoText {
+    font-family: var(--logo-font-family);
+    font-size: 1.3rem;
+    color: var(--primary-color);
+}
+
+.mbNavLogoTextSpan {
+    font-family: var(--logo-font-family);
+    color: var(--text-color);
+}
+
+.mbNavMain {
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mbNavMainLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.authNavMenuLink {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: .9rem;
+    color: grey;
+    border-bottom: 1px solid var(--grey-color);
+    padding-bottom: .5rem;
+    margin-right: 1.5rem;
+}
+
+.authNavMenuLink > .authNavMenuLinkIcon {
+    color: var(--text-color);
+}
+
+.authNavMenuLinkActive {
+    color: var(--text-color);
+    border-bottom: 1px solid var(--text-color);
+}
+
+.authNavMenuLinkActive > .authNavMenuLinkIcon {
+    color: var(--primary-color);
+}
+
+.mbNavBottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.authNavSignup {
+    padding: .7rem;
+    text-decoration: none;
+    background-color: var(--text-color);
+    margin-right: 1.5rem;
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.authNavSignup > * {
+    text-decoration: none;
+    color: var(--bg-color);
+    font-weight: 700;
+    font-size: .8rem;
+}
+
+.authNavSignupActive {
+    background-color: var(--primary-color);
+}
+
+.authNavSignupActive > * {
+    color: #ffffff;
+}
+
+.mbNavAuth {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.mbNavAuthText {
+    font-weight: 700;
+    font-size: 1.3rem;
+    cursor: pointer;
+}

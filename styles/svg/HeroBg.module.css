@@ -1,0 +1,14 @@
+.heroBg {
+    position: absolute;
+    height: 95%;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+@media screen and (max-width: 480px) {
+    .heroBg {
+        display: none;
+    }
+}

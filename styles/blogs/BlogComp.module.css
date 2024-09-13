@@ -1,0 +1,133 @@
+.blogComp {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.blogCompContainer {
+    background-color: rgb(75, 75, 75);
+    width: 100%;
+    height: 15rem;
+    border-radius: var(--radius);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+}
+
+.author {
+    background-color: var(--bg-grey);
+    padding: .5rem;
+    margin: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    border-radius: 40px;
+    padding-right: 1rem;
+    z-index: 2;
+}
+
+.authorName {
+    font-weight: 700;
+    font-size: .7rem;
+}
+
+.blogCompTitle {
+    font-size: 1.2rem;
+    margin-top: .5rem;
+}
+
+.blogCompTitle {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
+.blogCompDescription {
+    font-size: .9rem;
+    color: grey;
+}
+
+.blogCompDescription {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
+.lineDiv {
+    width: 100%;
+    height: 1px;
+    background-color: var(--grey-color);
+    margin: .3rem 0;
+} 
+
+.blogCompInfo {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    color: grey;
+    margin-bottom: .6rem;
+}
+
+.blogCompInfoItem {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.blogCompIcon {
+    font-size: 1.3rem;
+}
+
+.blogCompInfoText {
+    font-size: .9rem;
+}
+
+.blogCompLink {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .7rem;
+    border: 1px solid grey;
+    border-radius: 10px;
+    color: grey;
+    text-decoration: none;
+    transition: .5s all ease-in-out;
+    font-weight: 700;
+    font-size: .8rem;
+}
+
+.blogCompLink:hover {
+    border: none;
+    color: #ffffff;
+    background-color: var(--primary-color);
+}
+
+@media screen and (max-width: 480px) {
+    .blogCompTitle {
+        font-size: 1.1rem;
+    }
+    .blogCompDescription {
+        font-size: .85rem;
+    }
+    .blogCompIcon {
+        font-size: .7rem;
+    }
+    .blogCompLink {
+        padding: .7rem;
+        border-radius: 10px;
+        font-size: .8rem;
+    }
+    .authorName {
+        font-size: .5rem;
+    }
+    .author {
+        margin: 1rem;
+    }
+    .blogCompInfoText {
+        font-size: .7rem;
+    }
+}

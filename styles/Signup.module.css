@@ -1,0 +1,108 @@
+.signup {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.signupContent {
+    width: 45%;
+    padding: 2rem;
+    border: 1px solid var(--grey-color);
+    border-radius: var(--radius);
+    margin: 3rem 0;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: .2rem;
+    position: relative;
+    backdrop-filter: blur(55px);
+}
+
+.signupContentText {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.signupButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    margin: .5rem 0;
+    width: 100%;
+    border: 1px solid var(--bg-grey);
+    border-radius: var(--radius);
+    cursor: pointer;
+    padding: 1rem;
+    background: none;
+    transition: .3s all linear;
+}
+
+.signupButtonText {
+    font-size: 1rem;
+    font-weight: 700;
+    color: grey;
+}
+
+.signupButtonIcon {
+    width: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signupButton:hover {
+    border: 1px solid var(--text-color);
+}
+
+.signupButton:hover > .signupButtonText,
+.signupButton:active > .signupButtonText {
+    color: var(--text-color);
+}
+
+.signupPrompt {
+    margin: .5rem 0;
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+    font-size: .9rem;
+}
+
+.signupPromptLink {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.signupText {
+    font-size: 2rem;
+    margin: 1rem 0;
+    margin-bottom: 3rem;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.signupText > span {
+    color: var(--primary-color);
+}
+
+.opac {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 128, 254, 0.15) 0%, rgba(0, 128, 254, 0) 100%);
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 25rem;
+    height: 25rem;
+}
+
+@media screen and (max-width: 480px) {
+    .signupContent {
+        width: 100%;
+    }
+    .signupButtonIcon {
+        width: 20%;
+    }
+}

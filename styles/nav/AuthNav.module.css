@@ -1,0 +1,117 @@
+.authNav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem .5rem;
+    margin-bottom: 1rem;
+    /* border-bottom: 1px solid var(--grey-color); */
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 500;
+}
+
+.authNavLogo {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.authNavLogoText {
+    font-family: var(--logo-font-family);
+    font-size: 1.3rem;
+    color: var(--primary-color);
+}
+
+.authNavLogoTextSpan {
+    font-family: var(--logo-font-family);
+    color: var(--text-color);
+}
+
+.authNavToggle {
+    display: none;
+}
+
+.authNavMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.authNavMenuLinks {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.authNavMenuLink {
+    text-decoration: none;
+    font-size: 1rem;
+    color: grey;
+    font-weight: 700;
+}
+
+.authNavMenuLinkActive {
+    color: var(--text-color);
+}
+
+.authNavMenuSide {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* ----- For unauthenticated users ------- */
+
+.authNavSignup {
+    background-color: var(--text-color);
+    padding: .5rem .8rem;
+    border-radius: 5px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.authNavSignupActive {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.authNavSignupLink {
+    text-decoration: none;
+    font-size: .8rem;
+    color: var(--bg-color);
+    font-weight: 700;
+}
+
+/* ----- For authenticated users ------- */
+.logoutButton {
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+    .authNavMenu,
+    .authNavMenuSide {
+        display: none;
+    }
+    .authNavToggle {
+        display: flex;
+        cursor: pointer;
+        font-size: 1.2rem;
+        z-index: 500;
+    }
+    .authNav {
+        padding: 1rem 0;
+    }
+    .authNavLogoText {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,29 @@
+.animateTitle {
+    font-size: 12rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.unSelected {
+    transition: .2s all linear;
+}
+
+.selected {
+    background: linear-gradient(90deg, #0080FE 57.81%, #01FEFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -text-fill-color: transparent;
+    cursor: pointer;
+    transform: scale(1.1);
+    transform: translateY(-25px);
+    transition: .3s all linear;
+}
+
+@media screen and (max-width: 480px) {
+    .animateTitle {
+        font-size: 5rem;
+    }
+}

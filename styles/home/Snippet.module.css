@@ -1,0 +1,101 @@
+.snippet {
+    width: 100%;
+    position: relative;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.snippetFloat {
+    position: absolute;
+    bottom: 10%;
+    left: 0rem;
+    width: 85%;
+    border: 1px solid var(--grey-color);
+    border-radius: 10px;
+    z-index: 3;
+}
+
+.snippetFloatHeader {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .6rem;
+    border-bottom: 1px solid var(--grey-color);
+    background-color: rgb(13, 13, 13);
+    border-radius: var(--radius) var(--radius) 0 0;
+}
+
+.snippetFloatHeaderIcon {
+    color: var(--primary-color);
+}
+
+.snippetFloatHeaderText {
+    font-size: .8rem;
+}
+
+.snippetFloatContent {
+    width: 100%;
+    padding: .6rem;
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    background-color: var(--bg-color);
+    border-radius: 0 0 var(--radius) var(--radius);
+}
+
+.snippetFloatContentTitle {
+    font-size: 1rem;
+}
+
+.snippetFloatContentText {
+    font-size: .8rem;
+}
+
+.snippetCode {
+    height: 100%;
+    width: 85%;
+    border: 1px solid var(--grey-color);
+    border-radius: 10px;
+}
+
+.snippetCodeHeader {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .6rem .8rem;
+    border-bottom: 1px solid var(--grey-color);
+    background-color: rgb(13, 13, 13);
+    border-radius: var(--radius) var(--radius) 0 0;
+}
+
+.snippetCodeHeaderTitle {
+    font-size: .9rem;
+}
+
+.snippetCodeHeaderIcon {
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.snippetCodeShow {
+    width: 100%;
+    max-height: 100%;
+    z-index: 0;
+    position: relative;
+}
+
+@media screen and (max-width: 480px) {
+    .snippet {
+        height: 27rem;
+    }
+    .snippetCode {
+        width: 100%;
+    }
+    .snippetFloat {
+        width: 95%;
+    }
+}

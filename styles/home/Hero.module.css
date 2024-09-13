@@ -1,0 +1,110 @@
+.hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin: 3rem 0;
+}
+
+.heroTitles {
+    width: 100%;
+    font-size: 4rem;
+}
+
+.heroTitle {
+    line-height: 105%;
+}
+
+.heroTitle > b {
+    background: linear-gradient(90deg, #0080FE 57.81%, #01FEFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.heroTexts {
+    width: 100%;
+}
+
+.heroText {
+    font-size: 1rem;
+}
+
+.heroButtons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.heroButtonsLink {
+    background-color: white;
+    padding: .65rem 1.3rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.heroButtonsLinkText {
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+.heroButtonsCoffee {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    text-decoration: none;
+    color: white;
+}
+
+.heroButtonsCoffeeIcon {
+    font-size: 1.1rem;
+    color: rgb(184, 184, 0);
+}
+
+.heroButtonsCoffeeText {
+    font-size: .9rem;
+}
+
+.heroProfile {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.heroProfileImage {
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.heroProfileInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.heroProfileInfoText {
+    font-size: 1.2rem;
+}
+
+.heroProfileInfoLink {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: .75rem;
+}
+
+@media screen and (max-width: 480px) {
+    .hero {
+        margin: 1.5rem 0;
+    }
+    .heroTitles {
+        font-size: 2.5rem;
+    }
+    .heroButtons {
+        margin-bottom: 1.5rem;
+    }
+}

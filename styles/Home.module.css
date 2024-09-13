@@ -1,0 +1,24 @@
+.main {
+  height: 100%;
+  width: 100%;
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.mainContent {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 480px) {
+  .main {
+    margin-bottom: 1.5rem;
+  }
+  .mainContent {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+  }
+}

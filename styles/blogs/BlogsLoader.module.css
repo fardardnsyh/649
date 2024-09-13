@@ -1,0 +1,177 @@
+.blogsLoader {
+    width: 100%;
+}
+
+.blogsLoaderHeader {
+    width: 100%;
+    border-right: 1px solid var(--grey-color);
+    border-left: 1px solid var(--grey-color);
+    padding: 0 2rem;
+    margin-top: .8rem;
+}
+
+.blogsLoaderHeaderMain {
+    display: flex;
+    margin-bottom: 2.5rem;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.blogsLoaderHeaderContent {
+    width: 60%;
+}
+
+.blogsLoaderHeaderContentTitle {
+    height: 1.3rem;
+    border-radius: 5px;
+    width: 12rem;
+    background: linear-gradient(90deg, #1B1B1B 0%, #060606 100%);
+    background-size: 400% 400%;
+    animation: gradient 1s ease infinite alternate;
+    margin-bottom: .9rem;
+}
+
+.blogsLoaderHeaderContentTexts {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .4rem .8rem;
+}
+
+.blogsLoaderHeaderContentText {
+    height: 1rem;
+    width: 5.5rem;
+    background: linear-gradient(90deg, #1d1d1d 0%, #0e0e0e 100%);
+    background-size: 400% 400%;
+    animation: gradient 1s ease infinite alternate;
+    border-radius: 5px;
+}
+
+.blogsLoaderHeaderSocials {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.blogsLoaderHeaderSocial {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #1d1d1d 0%, #0e0e0e 100%);
+    background-size: 400% 400%;
+    animation: gradient 1s ease infinite alternate;
+}
+
+.blogsLoaderSearch {
+    display: flex;
+    width: 100%;
+    gap: 1.5rem;
+}
+
+.blogsLoaderSearchInput {
+    border-radius: 5px;
+    width: 35%;
+    height: 2rem;
+    background: linear-gradient(90deg, #1d1d1d 0%, #0e0e0e 100%);
+    background-size: 400% 400%;
+    animation: gradient 1s ease infinite alternate;
+}
+
+.blogsLoaderSearchToggles {
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+}
+
+.blogsLoaderSearchToggle {
+    height: 2rem;
+    width: 4.5rem;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #1d1d1d 0%, #0e0e0e 100%);
+    background-size: 400% 400%;
+    animation: gradient 1s ease infinite alternate;
+}
+
+.blogsLoaderBan {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.blogsLoaderBanner {
+    width: 100%;
+    border-radius: 10px;
+    height: 12rem;
+    background: linear-gradient(90deg, #1d1d1d 0%, #0e0e0e 100%);
+    background-size: 400% 400%;
+    animation: gradient 1s ease infinite alternate;
+    margin-bottom: 1rem;
+}
+
+.blogsLoaderBannerSlides {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    width: 100%;
+}
+
+.blogsLoaderBannerSlide {
+    color: grey;
+    font-size: .5rem;
+}
+
+.blogsLoaderList {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.blogsLoaderListItem {
+    width: 100%;
+    height: 25rem;
+    background: linear-gradient(90deg, #1d1d1d 0%, #0e0e0e 100%);
+    background-size: 400% 400%;
+    animation: gradient 1s ease infinite alternate;
+    border-radius: 10px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+    .blogsLoaderSearch {
+        flex-direction: column;
+    }
+    .blogsLoaderHeaderMain {
+        flex-direction: column;
+        gap: .8rem;
+        align-items: center;
+    }
+    .blogsLoaderHeaderContentText {
+        width: 3rem;
+    }
+    .blogsLoaderHeaderContent,
+    .blogsLoaderSearchInput {
+        width: 100%;
+    }
+    .blogsLoaderSearchToggle {
+        height: 1.5rem;
+    }
+    .blogsLoaderList {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.5rem;
+    }
+    .blogsLoaderListItem {
+        height: 10rem;
+    }
+}

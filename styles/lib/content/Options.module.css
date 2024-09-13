@@ -1,0 +1,197 @@
+/* Code Styles */
+
+.codeContainer {
+    background-color: rgb(13, 13, 13);
+    border-radius: var(--radius);
+    margin: .8rem 0;
+    width: 100%;
+    border: 1px solid var(--grey-color);
+}
+
+.codeContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem;
+    border-bottom: 1px solid var(--grey-color);
+}
+
+.codeContentText {
+    font-size: .8rem;
+}
+.codeContentText b {
+    color: rgb(216, 140, 0);
+}
+
+.codeContentButton {
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+    font-size: .8rem;
+    cursor: pointer;
+}
+
+.codeContentButtonIconCopy {
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+
+.codeContentButtonTextCopy {
+    color: var(--primary-color);
+    font-size: .8rem;
+}
+
+.codeContentButtonIconCopied {
+    font-size: 1rem;
+    color: var(--green-color);
+}
+
+.codeContentButtonTextCopied {
+    color: var(--green-color);
+    font-size: .8rem;
+}
+
+.codeEditor {
+    border: 0 0 var(--radius) var(--radius);
+    background-color: black;
+}
+
+/* Paragraph Styles */
+.paragraphDiv {
+    margin-bottom: .9rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.paragraph {
+    display: inline;
+    margin-right: .3rem;
+}
+
+/* Heading One */
+.headingOne {
+    margin-bottom: .7rem;
+    font-size: 1.8rem;
+}
+
+/* Heading Two */
+.headingTwo {
+    margin-bottom: .7rem;
+    font-size: 1.5rem;
+}
+
+/* Heading Two */
+.headingThree {
+    margin-bottom: .7rem;
+    font-size: 1.2rem;
+}
+
+/* Quote Styles */
+.quote {
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid var(--grey-color);
+    border-radius: calc(var(--radius) / 1);
+    margin-bottom: 1rem;
+    margin-top: .5rem;
+}
+
+.quoteOpen {
+    width: 5%;
+}
+
+.quoteText {
+    text-align: center;
+    width: 90%;
+}
+
+.quoteIcon {
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.quoteClose {
+    width: 5%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 480px) {
+    .quote {
+        padding: 1rem;
+    }
+}
+
+/* Unordered List */
+.unList {
+    width: 100%;
+    padding-left: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-bottom: 1rem;
+}
+
+.unListItem {
+    display: grid;
+    grid-template-columns: 1fr 30fr;
+    gap: .8rem;
+}
+
+@media screen and (max-width: 480px) {
+    .unListItem {
+        grid-template-columns: 1fr 18fr;
+    }
+}
+
+.unListItemIcon {
+    font-size: .5rem;
+    color: var(--text-color);
+    margin-top: .3rem;
+}
+
+/* HyperLink */
+.hyperLink {
+    display: inline;
+    color: var(--primary-color);
+    text-decoration: none;
+    margin-right: .3rem;
+}
+
+/* Embedded Styles */
+.embedded {
+    height: 415px;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+    .embedded {
+        height: 200px;
+    }
+}
+
+.embeddedContainer {
+    width: 100%;
+    height: 100%;
+}
+
+.embeddedContainerImage {
+    border-radius: var(--radius);
+    object-fit: cover;
+}
+
+/* Video Embedd */
+.embeddEntry {
+    height: 450px;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+    .embeddEntry {
+        height: 200px;
+    }
+}

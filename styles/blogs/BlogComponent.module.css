@@ -1,0 +1,261 @@
+.blogComp {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.blogMain {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.blogMainHeader {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: .8rem 0;
+}
+
+.blogHeaderLink {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1rem;
+    transition: .3s all ease-in-out;
+    font-size: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: .1rem;
+    font-weight: 700;
+}
+
+.blogHeaderLinkDiv {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+
+.blogHeaderLinkDate {
+    font-size: .7rem;
+    color: grey;
+}
+
+.blogHeaderLink:hover {
+    color: var(--text-color);
+}
+
+.blogHeaderProf {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+}
+
+.blogHeaderProfCont {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+
+.blogHeaderProfContTitle {
+    font-size: .9rem;
+}
+
+.blogHeaderProfContText {
+    font-size: .8rem;
+    color: grey;
+}
+
+.blogTitle {
+    font-size: 1.9rem;
+    margin: .5rem 0;
+}
+
+/* Video */
+.blogComment {
+    font-size: 1.2rem;
+}
+
+.blogCommentIcon {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.blogCommentIcon:hover {
+    color: var(--primary-color);
+}
+
+.blogAddComment {
+    width: 100%;
+    padding: .4rem 0;
+    border-bottom: 1px solid var(--grey-color);
+    margin-bottom: 1rem;
+}
+
+.blogAddComment:hover {
+    border-bottom: 1px solid var(--text-color);
+}
+
+.blogAddCommentInput {
+    background: none;
+    border: none;
+    outline: none;
+    width: 75%;
+    font-size: .9rem;
+    padding: .5rem 0;
+    color: var(--text-color);
+}
+
+.blogAddCommentBtn {
+    width: 25%;
+    padding: .5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: calc(var(--radius) - 5px);
+    transition: .3s all linear;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.blogAddCommentBtn:hover {
+    background-color: var(--tertiary-color);
+    color: #000000;
+}
+
+.blogComments {
+    display: flex;
+    flex-direction: row;
+    gap: .4rem;
+    margin-bottom: 1.2rem;
+}
+
+.blogCommentsAuthor {
+    font-size: .8rem;
+    margin-bottom: .1rem;
+}
+
+.blogCommentsText {
+    margin-bottom: .7rem;
+    font-size: .9rem;
+    color: grey;
+}
+
+.blogCommentLike {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
+
+.blogCommentsComp {
+    width: 30%;
+}
+
+.blogContainer {
+    height: 400px;
+    margin-bottom: 1.8rem;
+}
+
+.blogDetails {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+}
+
+.blogDetailsContainer {
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-grey);
+    padding: 1rem;
+    border-radius: var(--radius);
+    width: 40%;
+    justify-content: space-around;
+}
+
+.blogDetailsContent {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.blogDetailsContentIcon {
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: .2s all linear;
+}
+
+.blogDetailsContentIcon:hover {
+    color: var(--primary-color);
+}
+
+.blogDetailsContentText {
+    font-size: .9rem;
+}
+
+.blogDetailsContain {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.blogDetailsLine {
+    height: 20px;
+    width: 1px;
+    background-color: var(--grey-color);
+}
+
+.blogCompSide {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: sticky;
+    top: 0rem;
+}
+
+@media screen and (max-width: 480px) {
+    .blogComp {
+        flex-direction: column;
+    }
+    .blogMain,
+    .blogCommentsComp {
+        width: 100%;
+    }
+    .blogContainer {
+        height: 200px;
+    }
+    .blogTitle {
+        font-size: 1.4rem;
+        margin-top: 1.2rem;
+    }
+    .blogHeaderLink {
+        font-size: .8rem;
+    }
+    .blogAddCommentBtn {
+        font-size: .7rem;
+        width: 20%;
+    }
+    .blogAddCommentInput {
+        width: 80%;
+    }
+    .blogDetailsContainer {
+        width: 80%;
+        padding: .8rem;
+    }
+    .blogDetailsContentIcon {
+        font-size: 1.1rem;
+    }
+    .blogDetailsContentText {
+        font-size: .7rem;
+    }
+    .blogCompSide {
+        width: 100%;
+    }
+}

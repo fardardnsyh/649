@@ -1,0 +1,158 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.footerMain {
+    background-color: var(--bg-grey);
+    padding: 2rem;
+    height: 12rem;
+    border-radius: var(--radius);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+    gap: 1rem;
+}
+
+.footerSub {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .2rem;
+}
+
+.footerSubTitle {
+    font-size: 1.6rem;
+}
+
+.footerSubDescrip {
+    font-size: .9rem;
+    color: grey;
+}
+
+.footerSubin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .2rem;
+}
+
+.footerSubinMail {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: .9rem;
+}
+
+.footerSubinInput {
+    padding: .8rem;
+    width: 70%;
+    outline: none;
+    background: none;
+    border-radius: calc(var(--radius) - 5px);
+    border: 1px solid var(--grey-color);
+    color: var(--text-color);
+}
+
+.footerSubinButton {
+    padding: .8rem;
+    width: 25%;
+    outline: none;
+    border: none;
+    border-radius: calc(var(--radius) - 5px);
+    background-color: var(--primary-color);
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s all linear;
+}
+
+.footerSubinButton:hover {
+    background-color: var(--tertiary-color);
+    color: black;
+}
+
+.footerSubinError {
+    color: rgb(255, 26, 26);
+    font-size: .8rem;
+    margin-top: .3rem;
+    font-weight: 700;
+}
+
+.footerSubinThank {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+}
+
+.footerBottom {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin: .8rem 0;
+    padding: 0 .8rem;
+}
+
+.footerBottomLearn {
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+.footerBottomRights {
+    font-size: .8rem;
+    font-weight: 700;
+    color: grey;
+}
+
+.authNavLogo {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.authNavLogoText {
+    font-family: var(--logo-font-family);
+    font-size: 1.3rem;
+    color: var(--primary-color);
+}
+
+.authNavLogoTextSpan {
+    font-family: var(--logo-font-family);
+    color: var(--text-color);
+}
+
+@media screen and (max-width: 480px) {
+    .footerMain {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        height: 11rem;
+    }
+    .footerSubTitle {
+        font-size: 1rem;
+    }
+    .footerSubinButton {
+        width: 30%;
+    }
+    .footerBottomLearn {
+        display: none;
+    }
+    .authNavLogoText {
+        font-size: 1rem;
+    }
+    .footerBottomRights {
+        font-size: .6rem;
+    }
+    .footerSubinInput,
+    .footerSubinButton {
+        padding: .6rem;
+    }
+    .footerSubDescrip,
+    .footerSubinMail {
+        font-size: .7rem;
+    }
+    .footerSubinThank {
+        font-size: 1.2rem;
+    }
+}

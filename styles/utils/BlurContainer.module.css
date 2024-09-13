@@ -1,0 +1,15 @@
+.blurContainer {
+    background-color: #070707;
+    border: 1px solid var(--grey-color);
+    backdrop-filter: blur(25px);
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    transition: .5s all linear;
+}

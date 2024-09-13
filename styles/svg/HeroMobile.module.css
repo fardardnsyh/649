@@ -1,0 +1,15 @@
+.heroMobile {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .heroMobile {
+        display: block;
+        position: absolute;
+        height: 95%;
+        width: 100%;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+}

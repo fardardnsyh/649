@@ -1,0 +1,41 @@
+.comment{
+    width: 100%;
+}
+
+.introComments {
+    display: flex;
+    flex-direction: row;
+    gap: .4rem;
+}
+
+.commentHeader {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+
+.commentHeaderIcon {
+    font-size: .6rem;
+    color: var(--primary-color);
+}
+
+.commentHeaderDate {
+    font-size: .5rem;
+    color: rgb(202, 202, 202);
+}
+
+.introCommentsAuthor {
+    font-size: .8rem;
+    margin-bottom: .1rem;
+}
+
+.introCommentsText {
+    margin-bottom: .7rem;
+    font-size: .9rem;
+    color: grey;
+}
+
+.introCommentLike {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
